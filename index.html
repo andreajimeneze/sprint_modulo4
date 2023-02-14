@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="d-flex justify-content-center flex-column ">
+        <h2>Inventario</h2>
+        <h4>Listado de Productos</h4>
+    </div>
+    <div>
+        <p>Puede ingresar productos haciendo click en el siguiente boton:</p>
+        <button class="btn btn-success m-3" id="btnEditar">Ingresar nuevo producto</button>
+    </div>
+    <table class="table table-striped" id="tablaPdtos">
+        <thead>
+            <tr>
+                <td></td>
+                <td>Codigo</td>
+                <td>Nombre</td>
+                <td>Descripción</td>
+                <td>Precio</td>
+                <td>Imagen</td>
+                <td>Etiqueta</td>
+                <td>Stock</td>
+                <td>Editar</td>
+                <td>Eliminar</td>
+            </tr>
+        </thead>
+        <tbody id="filasPdtos"></tbody>
+    </table>
+
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
